@@ -20,7 +20,7 @@ allprojects {
     if (isReleaseVersion) {
         ext.sonatypeRepo = "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
     } else {
-        version += "-SNAPSHOT"
+//        version += "-SNAPSHOT"
         ext.sonatypeRepo = "https://oss.sonatype.org/content/repositories/snapshots/"
     }
 
