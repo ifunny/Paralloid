@@ -2,20 +2,20 @@ apply plugin: 'com.android.library'
 
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_7
-        targetCompatibility JavaVersion.VERSION_1_7
-    }
+	compileSdkVersion rootProject.ext.compileSdkVersion
+	buildToolsVersion rootProject.ext.buildToolsVersion
+	compileOptions {
+		sourceCompatibility JavaVersion.VERSION_1_7
+		targetCompatibility JavaVersion.VERSION_1_7
+	}
 
-    defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 21
-    }
+	defaultConfig {
+		minSdkVersion 14
+		targetSdkVersion rootProject.ext.compileSdkVersion
+	}
 }
 
 dependencies {
-    compile rootProject.ext.supportPackageVersion
+	compile rootProject.ext.supportPackageVersion
 }
 

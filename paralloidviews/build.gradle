@@ -1,19 +1,19 @@
 apply plugin: 'com.android.library'
 
 repositories {
-    mavenCentral()
+	mavenCentral()
 }
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
+	compileSdkVersion rootProject.ext.compileSdkVersion
+	buildToolsVersion rootProject.ext.buildToolsVersion
 
-    defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 21
-    }
+	defaultConfig {
+		minSdkVersion 14
+		targetSdkVersion rootProject.ext.compileSdkVersion
+	}
 }
 
 dependencies {
-    compile project(':paralloid:paralloid')
+	compile project(':paralloid:paralloid')
 }
