@@ -1,1 +1,4 @@
-include ':paralloid', ':paralloidexample', ':paralloidviews'
+include ':Paralloid'
+project(':Paralloid').projectDir = new File('paralloid')
+include ':ParalloidViews'
+project(':ParalloidViews').projectDir = new File('paralloidviews')

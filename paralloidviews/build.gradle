@@ -1,19 +1,22 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.github.ifunny'
 
 repositories {
-	mavenCentral()
+	jcenter()
 }
 
 android {
-	compileSdkVersion rootProject.ext.compileSdkVersion
-	buildToolsVersion rootProject.ext.buildToolsVersion
+	compileSdkVersion 23
+	buildToolsVersion '24.0.1'
 
 	defaultConfig {
 		minSdkVersion 14
-		targetSdkVersion rootProject.ext.compileSdkVersion
+		targetSdkVersion 23
 	}
 }
 
 dependencies {
-	compile project(':paralloid')
+	compile project(':Paralloid')
 }
